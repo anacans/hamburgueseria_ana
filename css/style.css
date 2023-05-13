@@ -123,6 +123,44 @@ main .titulo>div:first-child {
     color: var(--colorsecundario);
 }
 
+main .container .article-container {
+    display: flex;
+}
+
+main .container .article-container article {
+    padding: 10px;
+}
+
+main .container .article-container figure div {
+    position: relative;
+    background-color: var(--colorprincipal);
+    color: white;
+    width: 40%;
+    padding: 10px;
+}
+
+main .container .article-container article div h2 {
+    font-size: 120%;
+}
+
+main .container .article-container article div h3 {
+    color: var(--colorprincipal);
+    font-size: 80%;
+}
+
+main .container .article-container article div p {
+    color: darkgrey;
+    font-size: 90%;
+}
+
+main .container .article-container article div a {
+    color: var(--colorprincipal);
+    font-size: 80%;
+    text-decoration: none;
+}
+
+
+
 /* fin blog */
 
 
@@ -162,3 +200,5 @@ main .titulo>div:first-child {
         border-bottom: 0px;
     }
 }
+
+/* mediaqueris blog */
