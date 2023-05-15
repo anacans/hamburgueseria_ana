@@ -126,6 +126,7 @@ main .titulo>div:first-child {
 main .container .article-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
 }
 
 main .container .article-container article {
@@ -166,6 +167,7 @@ main .container .article-container article div h3 {
     font-size: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 main .container .article-container article div p {
@@ -180,6 +182,7 @@ main .container .article-container article div a {
     color: var(--colorprincipal);
     font-size: 80%;
     text-decoration: none;
+    font-weight: bold;
 }
 
 
