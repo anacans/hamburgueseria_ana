@@ -225,6 +225,99 @@ footer a:hover {
 
 /* fin hero */
 
+/* inicio services */
+
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    /* cambios de eje */
+    position: relative;
+    width: 6.23rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    /* hemos cargado la fuente, por lo que no hace falta forzar la negrita */
+}
+
+main section .grid {
+    display: flex;
+    /* le estoy dando un sistema flexible que se reparte el contenido a partes iguales */
+    flex-wrap: wrap;
+    /* le estoy diciendo que me deje elegir como quiero que ocupe el contenido */
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #services article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #services article>div i {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+    /* con el padding ya crece el elemento, por lo que no le hace falta ancho ni alto */
+    display: inline-block;
+}
+
+main #services article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+main section .enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section .enlace i {
+    margin-left: 8px;
+    /* para separar la flecha del leer más */
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+/* fin services */
+
 
 /* inicio blog */
 
@@ -304,8 +397,6 @@ main .container .article-container article div a {
     font-weight: bold;
 }
 
-
-
 /* fin blog */
 
 
@@ -330,6 +421,20 @@ main .container .article-container article div a {
     footer {
         text-align: left;
 
+    }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin: var(--margingrid) 0;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 100%;
     }
 }
 
@@ -358,6 +463,16 @@ main .container .article-container article div a {
 
     .hero .container {
         padding: 0;
+    }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
     }
 
 }
