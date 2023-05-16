@@ -422,6 +422,20 @@ main .container .article-container article div a {
         text-align: left;
 
     }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin: var(--margingrid) 0;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 100%;
+    }
 }
 
 @media(min-width: 62.75em) {
@@ -449,6 +463,16 @@ main .container .article-container article div a {
 
     .hero .container {
         padding: 0;
+    }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
     }
 
 }
