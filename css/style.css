@@ -152,8 +152,78 @@ footer a:hover {
     /* los ponemos en rem para que no se sume */
 }
 
-
 /* fin flecha */
+
+/* inicio hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    /* para oscurecer el fondo */
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+    /* lo ponemos separado porque no queremos que herede el estilo del margen, ya que vamos a reutilizar el botón */
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* fin hero */
 
 
 /* inicio blog */
@@ -280,17 +350,14 @@ main .container .article-container article div a {
         padding: 0.5em 0 1.25em 1.25em;
         border-bottom: 0px;
     }
-}
 
-
-
-/* mediaqueris blog */
-
-@media(min-width: 48em) {
     main .container .article-container article {
         position: relative;
         width: 33.333%;
     }
-}
 
-/* mediaqueris blog */
+    .hero .container {
+        padding: 0;
+    }
+
+}
