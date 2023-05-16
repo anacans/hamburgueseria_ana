@@ -350,6 +350,11 @@ main .container .article-container article div a {
         padding: 0.5em 0 1.25em 1.25em;
         border-bottom: 0px;
     }
+
+    .hero .container {
+        padding: 0;
+    }
+
 }
 
 
