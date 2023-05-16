@@ -107,6 +107,47 @@ header nav .menu li:last-child a {
 
 /* fin header */
 
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    color: white;
+    padding: 1.25em 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+/* fin footer */
+
+/* inicio flecha */
+
+.flecha a {
+    display: block;
+    /* para que todo sea clicable */
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+    /* los ponemos en rem para que no se sume */
+}
+
+
+/* fin flecha */
+
+
 /* inicio blog */
 
 main .titulo {
@@ -206,6 +247,12 @@ main .container .article-container article div a {
     header .nav-top .container {
         justify-content: space-between;
     }
+
+    /* para centrar el texto del footer a la izq */
+    footer {
+        text-align: left;
+
+    }
 }
 
 @media(min-width: 62.75em) {
@@ -227,6 +274,8 @@ main .container .article-container article div a {
     }
 }
 
+
+
 /* mediaqueris blog */
 
 @media(min-width: 48em) {
@@ -235,3 +284,5 @@ main .container .article-container article div a {
         width: 33.333%;
     }
 }
+
+/* mediaqueris blog */
