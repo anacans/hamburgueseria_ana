@@ -351,21 +351,13 @@ main .container .article-container article div a {
         border-bottom: 0px;
     }
 
+    main .container .article-container article {
+        position: relative;
+        width: 33.333%;
+    }
+
     .hero .container {
         padding: 0;
     }
 
 }
-
-
-
-/* mediaqueris blog */
-
-@media(min-width: 48em) {
-    main .container .article-container article {
-        position: relative;
-        width: 33.333%;
-    }
-}
-
-/* mediaqueris blog */
