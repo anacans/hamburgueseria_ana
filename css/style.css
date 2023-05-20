@@ -439,6 +439,7 @@ main .container .article-container article div a i {
 
 main #menu {
     background-color: var(--colorsecundario);
+    color: white;
 }
 
 main #menu .container h2 {
