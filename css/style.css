@@ -364,20 +364,6 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* inicio blog */
 
-main .titulo {
-    display: flex;
-    font-family: var(--fuentetitulos);
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    color: var(--colorprincipal);
-    font-size: 200%;
-}
-
-main .titulo>div:first-child {
-    color: var(--colorsecundario);
-}
-
 main .container .article-container {
     display: flex;
     flex-wrap: wrap;
@@ -412,9 +398,15 @@ main .container .article-container article div {
 
 }
 
+<<<<<<< HEAD
 main .container .article-container article div h3 {
     color: black;
     font-size: 130%;
+=======
+
+main .container .article-container article div h2 {
+    font-size: 120%;
+>>>>>>> feature/correcciones_blog
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -422,11 +414,18 @@ main .container .article-container article div h3 {
 
 main .container .article-container article div h4 {
     color: var(--colorprincipal);
+<<<<<<< HEAD
     font-weight: 700;
 
+=======
+    font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+>>>>>>> feature/correcciones_blog
 }
 
-main .container .article-container article div p {
+*/ main .container .article-container article div p {
     color: darkgrey;
     font-size: 90%;
     margin-top: 10px;
@@ -438,7 +437,7 @@ main .container .article-container article div a {
     color: var(--colorprincipal);
     font-size: 80%;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 main .container .article-container article div a i {
