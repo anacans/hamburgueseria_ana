@@ -382,6 +382,7 @@ main .container .article-container {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
+
 }
 
 main .container .article-container article {
@@ -411,18 +412,18 @@ main .container .article-container article div {
 
 }
 
-main .container .article-container article div h2 {
-    font-size: 120%;
+main .container .article-container article div h3 {
+    color: black;
+    font-size: 130%;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 
-main .container .article-container article div h3 {
+main .container .article-container article div h4 {
     color: var(--colorprincipal);
-    font-size: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 700;
+
 }
 
 main .container .article-container article div p {
@@ -438,6 +439,10 @@ main .container .article-container article div a {
     font-size: 80%;
     text-decoration: none;
     font-weight: bold;
+}
+
+main .container .article-container article div a i {
+    margin: 8px;
 }
 
 /* fin blog */
