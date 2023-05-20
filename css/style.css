@@ -452,6 +452,7 @@ main #menu .container h2 {
 
 main #menu .container ul li {
     margin: var(--margingrid);
+    margin-bottom: 30px;
 }
 
 main #menu .container ul li:first-child {
@@ -629,6 +630,13 @@ main #menu .container .der article a {
 
     }
 
+    main #menu .container ul {
+        margin-bottom: px;
+    }
+
+    main #menu .container .today {
+        margin-top: 80px;
+    }
 
 
 
