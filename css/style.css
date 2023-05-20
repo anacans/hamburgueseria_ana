@@ -442,9 +442,66 @@ main #menu {
     color: white;
 }
 
+main #menu p {
+    color: #999;
+}
+
 main #menu .container h2 {
     color: white;
 }
+
+main #menu .container ul li {
+    margin: var(--margingrid);
+}
+
+main #menu .container ul li:first-child {
+    background-color: var(--colorprincipal);
+    padding: 10px;
+    margin: var(--margingrid) 0;
+    border-radius: 6px;
+}
+
+main #menu .container .today h3 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+main #menu .container .today hr {
+    color: var(--colorprincipal);
+    width: 80px;
+}
+
+main #menu .container .der article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--margingrid);
+
+}
+
+main #menu .container .der figure {
+    margin-top: 30px;
+}
+
+main #menu .container .der article h3 {
+    margin: var(--margingrid) 0;
+    font-weight: 700;
+    font-size: 120%;
+
+}
+
+main #menu .container .der article span {
+    color: var(--colorprincipal);
+}
+
+main #menu .container .der article a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
 
 
 /* fin menu */
@@ -539,6 +596,29 @@ main #menu .container h2 {
         /* mediaqueries de la seccion services */
         width: 33.333%;
     }
+
+    main #menu .container2 {
+        display: flex;
+    }
+
+    main #menu .container2 .izq {
+        width: 20%;
+    }
+
+    main #menu .container2 .der article {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
