@@ -1,0 +1,665 @@
+@import url(reset.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* variables */
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
+
+/* inicio header */
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header .nav-top span {
+    color: white;
+    display: none;
+}
+
+header nav {
+    padding: 1.25em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    width: 100%;
+}
+
+header nav .menu .activa {
+    color: var(--colorprincipal);
+}
+
+header nav .menu a:hover {
+    color: var(--colorprincipal);
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+    width: 1.875em;
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav figure {
+    max-width: 100px;
+}
+
+header nav .menu a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border-bottom: 0px;
+}
+
+/* fin header */
+
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    color: white;
+    padding: 1.25em 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+/* fin footer */
+
+/* inicio flecha */
+
+.flecha a {
+    display: block;
+    /* para que todo sea clicable */
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+    /* los ponemos en rem para que no se sume */
+}
+
+/* fin flecha */
+
+/* inicio hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    /* para oscurecer el fondo */
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+    /* lo ponemos separado porque no queremos que herede el estilo del margen, ya que vamos a reutilizar el botón */
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* fin hero */
+
+/* inicio services */
+
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    /* cambios de eje */
+    position: relative;
+    width: 6.23rem;
+    margin: 0 auto;
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    /* hemos cargado la fuente, por lo que no hace falta forzar la negrita */
+}
+
+main section .grid {
+    display: flex;
+    /* le estoy dando un sistema flexible que se reparte el contenido a partes iguales */
+    flex-wrap: wrap;
+    /* le estoy diciendo que me deje elegir como quiero que ocupe el contenido */
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #services article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #services article>div i {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+    /* con el padding ya crece el elemento, por lo que no le hace falta ancho ni alto */
+    display: inline-block;
+}
+
+main #services article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+main section .enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section .enlace i {
+    margin-left: 8px;
+    /* para separar la flecha del leer más */
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+/* fin services */
+
+/* inicio aboutus */
+
+main #aboutus .grid figure {
+    width: 100%;
+}
+
+main #aboutus .grid>div {
+    width: 100%;
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 93%;
+    margin: 1.5em auto;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+
+
+/* fin aboutus */
+
+/* inicio blog */
+
+main .container .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+
+}
+
+main .container .article-container article {
+    position: relative;
+    width: 50%;
+}
+
+main .container .article-container figure {
+    padding: 10px;
+}
+
+main .container .article-container figure div {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 87, 58, 0.8);
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+main .container .article-container article div {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+main .container .article-container article div h3 {
+    font-size: 120%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+main .container .article-container article div h4 {
+    color: var(--colorprincipal);
+    font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+*/ main .container .article-container article div p {
+    color: darkgrey;
+    font-size: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+main .container .article-container article div a {
+    color: var(--colorprincipal);
+    font-size: 80%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main .container .article-container article div a i {
+    margin: 8px;
+}
+
+/* fin blog */
+
+/* inicio menu */
+
+main #menu {
+    background-color: var(--colorsecundario);
+    color: white;
+}
+
+main #menu p {
+    color: #999;
+}
+
+main #menu .container h2 {
+    color: white;
+}
+
+main #menu .container ul li {
+    margin: var(--margingrid);
+    margin-bottom: 30px;
+}
+
+main #menu .container ul li:first-child {
+    background-color: var(--colorprincipal);
+    padding: 10px;
+    margin: var(--margingrid) 0;
+    border-radius: 6px;
+}
+
+main #menu .container .today h3 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+main #menu .container .today hr {
+    color: var(--colorprincipal);
+    width: 80px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+main #menu .container .today p {
+    margin-top: var(--margingrid);
+}
+
+main #menu .container .der article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--margingrid);
+
+}
+
+main #menu .container .der figure {
+    margin-top: 30px;
+}
+
+main #menu .container .der article h3 {
+    margin: var(--margingrid) 0;
+    font-weight: 700;
+
+
+}
+
+main #menu .container .der article span {
+    color: var(--colorprincipal);
+
+}
+
+main #menu .container .der article a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+
+/* fin menu */
+
+
+/* inicio mediaqueries */
+
+@media(min-width: 48em) {
+    header .nav-top span {
+        color: white;
+        display: inline;
+    }
+
+    header .nav-top a i {
+        font-size: 120%;
+    }
+
+    header .nav-top .container {
+        justify-content: space-between;
+    }
+
+    /* para centrar el texto del footer a la izq */
+    footer {
+        text-align: left;
+
+    }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 50%;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin: var(--margingrid) 0;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 100%;
+    }
+
+    main #aboutus .grid figure {
+        width: 50%;
+    }
+
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        margin: var(--margingrid) 0 2em 0;
+    }
+}
+
+@media(min-width: 62.75em) {
+    header nav .menu {
+        width: auto;
+    }
+
+    header nav .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a {
+        padding: 0.5em 0 1.25em 1.25em;
+        border-bottom: 0px;
+    }
+
+    main .container .article-container article {
+        position: relative;
+        width: 33.333%;
+    }
+
+    .hero .container {
+        padding: 0;
+    }
+
+    main #services article {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
+    }
+
+    main #services article:last-child {
+        /* mediaqueries de la seccion services */
+        width: 33.333%;
+    }
+
+    main #menu .container2 {
+        display: flex;
+    }
+
+    main #menu .container2 .izq {
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    main #menu .container2 .der article {
+        width: 70%;
+        margin-left: 100px;
+
+    }
+
+    main #menu .der article figure {
+        width: 40%;
+        padding: 20px;
+    }
+
+    main #menu .der article div {
+        width: 60%;
+        margin-top: 40px;
+        font-size: 90%;
+    }
+
+    main #menu .container .der article h3 {
+        font-size: 100%;
+
+    }
+
+    main #menu .container ul {
+        margin-bottom: px;
+    }
+
+    main #menu .container .today {
+        margin-top: 80px;
+    }
+
+    main #menu .container .der article span {
+
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
